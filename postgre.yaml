@@ -1,0 +1,14 @@
+version: "3.4"
+ 
+services:
+  postgres:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: enl_api_dev
+      POSTGRES_USER: enlighten-api
+      POSTGRES_PASSWORD: 100%Enlighten
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+ 
